@@ -4,10 +4,57 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	  <div class="container mt-5">
+<!-- 		  <h4 class="m-auto">Internship Form</h4> -->
+        <form id="my-form">
+            <div class="mb-3">
+                <label for="first-name-input" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="first-name-input" required>
+                <div id="first-name-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="last-name-input" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name-input" required>
+                <div id="last-name-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="email-input" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="email-input" required>
+                <div id="email-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="college-input" class="form-label">College Name:</label>
+                <input type="text" class="form-control" id="college-input" required>
+                <div id="college-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="roll-no-input" class="form-label">Roll No.</label>
+                <input type="text" class="form-control" id="roll-no-input" required>
+                <div id="roll-no-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="grad-year-select" class="form-label">Graduation Year:</label>
+                <select class="form-select" id="grad-year-select" required>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div id="graduation-year-error" class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+                <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+                <div id="conditions-checkbox-error" class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
